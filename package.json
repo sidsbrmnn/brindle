@@ -1,0 +1,20 @@
+{
+  "name": "brindle",
+  "version": "1.0.0",
+  "description": "Front-end development for brindle, an events and meeting app. Design inspired from dribbble.",
+  "scripts": {
+    "start": "gulp sass:watch",
+    "build": "gulp sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Siddharth Subramanian",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "eslint": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
