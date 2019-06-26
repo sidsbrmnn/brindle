@@ -16,5 +16,31 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
-  }
+  },
+  "main": "gulpfile.js",
+  "dependencies": {
+    "combined-stream": "^1.0.8",
+    "core-util-is": "^1.0.2",
+    "currently-unhandled": "^0.4.1",
+    "dashdash": "^1.14.1",
+    "decamelize": "^1.2.0",
+    "decode-uri-component": "^0.2.0",
+    "default-compare": "^1.0.0",
+    "default-resolution": "^2.0.0",
+    "delayed-stream": "^1.0.0",
+    "delegates": "^1.0.0",
+    "detect-file": "^1.0.0",
+    "escape-string-regexp": "^1.0.5",
+    "extend": "^3.0.2",
+    "invert-kv": "^1.0.0",
+    "node-sass": "^4.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidsbrmnn/brindle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sidsbrmnn/brindle/issues"
+  },
+  "homepage": "https://github.com/sidsbrmnn/brindle#readme"
 }
