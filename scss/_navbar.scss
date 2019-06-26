@@ -4,30 +4,30 @@
 
 .navbar {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 1rem;
-  .navbar-brand {
-    display: inline-block;
-  }
   .navbar-collapse {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: none;
+    &.show {
+      display: flex;
+      flex-direction: column;
+    }
   }
   .navbar-nav {
-    list-style: none;
     display: flex;
-    flex-direction: row;
-    padding: 0;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem 0;
     margin: 0;
+    li {
+      padding: 0.6rem 0rem;
+    }
     .nav-link {
-      padding: 0.5rem 1rem;
       color: #a9a9a9;
       font-weight: $bold;
       font-size: 0.75rem;
+      padding: 0.25rem 0rem;
       letter-spacing: 0.5px;
       transition: 5ms ease;
       &:hover {
@@ -37,18 +37,51 @@
         color: #292929;
       }
     }
-    .btn-nav {
-      color: $primary;
-      border: 1.5px solid rgba($primary, 0.75);
-      font-weight: $bold;
+  }
+  .nav-btn {
+    font-size: 0.75rem;
+    font-weight: $bold;
+    letter-spacing: 0.5px;
+    color: $primary;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    transition: 10ms ease-in-out;
+    border: 1.5px solid rgba($color: $primary, $alpha: 0.75);
+    &:hover {
+      border-color: $primary;
+    }
+  }
+}
+
+.navbar-toggler {
+  display: inline-block;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .navbar-collapse {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+    }
+    .navbar-nav {
+      flex-direction: row;
       padding: 0.5rem 1.5rem;
-      border-radius: 1.5rem;
-      margin-left: 1.5rem;
-      transition: 10ms ease-in-out;
-      &:hover {
-        color: $primary;
-        border-color: $primary;
+      li {
+        padding: 0 0.5rem;
+      }
+      .nav-link {
+        padding: 1rem 0.5rem;
+        &.active {
+          border-bottom: 2px solid rgba($color: $primary, $alpha: 0.9);
+        }
       }
     }
+  }
+  .navbar-toggler {
+    display: none;
   }
 }
