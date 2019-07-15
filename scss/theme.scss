@@ -9,6 +9,19 @@ body {
     "Helvetica Neue", sans-serif;
 }
 
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
 a,
 a:focus {
   text-decoration: none;
