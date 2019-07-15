@@ -7,6 +7,10 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem;
+  .navbar-brand > img {
+    width: 56px;
+    height: auto;
+  }
   .navbar-collapse {
     display: none;
     &.show {
