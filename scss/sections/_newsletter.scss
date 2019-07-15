@@ -1,0 +1,32 @@
+.newsletter {
+  font-size: 0.85rem !important;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .title {
+    font-weight: 700;
+  }
+  input[type="email"] {
+    padding: 0.6rem 0;
+    margin: 0.75rem 0;
+    border: none;
+    border-bottom: 0.1rem solid #a9a9a9;
+    text-align: center;
+    width: 20rem;
+  }
+  button[type="submit"] {
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 768px) {
+  .newsletter {
+    flex-direction: row;
+    input[type="email"] {
+      margin: 0 1.5rem;
+      text-align: left;
+    }
+  }
+}
