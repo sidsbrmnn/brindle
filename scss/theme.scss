@@ -4,44 +4,6 @@
 @import "navbar";
 @import "sections";
 
-body {
-  font-family: "Nunito", -apple-system, "Segoe UI", Roboto, Ubuntu, "Open Sans",
-    "Helvetica Neue", sans-serif;
-}
-
-article,
-aside,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-  display: block;
-}
-
-a,
-a:focus {
-  text-decoration: none;
-  color: inherit;
-}
-
-header {
-  border-top: 0.4rem solid $primary;
-}
-
-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-
-footer {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-
 .btn {
   font-size: 0.8rem !important;
   padding: 0.75rem 2rem;
