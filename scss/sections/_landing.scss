@@ -1,0 +1,21 @@
+.landing {
+  .heading {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $primary;
+  }
+  .title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: $primary;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .text {
+    font-size: 0.9rem;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+  }
+}

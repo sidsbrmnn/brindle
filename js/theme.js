@@ -1,12 +1,12 @@
-const navbarNav = document.getElementById("mainNav");
-const navToggler = document.getElementById("navToggler");
+const navbarNav = document.getElementById('mainNav');
+const navToggler = document.getElementById('navToggler');
 
-navToggler.addEventListener("click", e => {
+navToggler.addEventListener('click', e => {
   e.preventDefault();
-  navbarNav.classList.toggle("show");
+  navbarNav.classList.toggle('show');
 });
 
 window.onresize = () => {
-  if (window.innerWidth < 992 && navbarNav.classList.contains("show"))
-    navbarNav.classList.remove("show");
+  if (window.innerWidth < 992 && navbarNav.classList.contains('show'))
+    navbarNav.classList.remove('show');
 };
