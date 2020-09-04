@@ -33,7 +33,7 @@
     "escape-string-regexp": "^1.0.5",
     "extend": "^3.0.2",
     "invert-kv": "^1.0.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "repository": {
     "type": "git",
